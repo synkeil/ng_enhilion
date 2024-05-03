@@ -1,0 +1,37 @@
+<div class="relative">
+  <div class="sticky top-0 h-screen bg-slate-400">textt</div>
+  <div class="sticky top-0 h-screen bg-blue-400">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo minima nesciunt, quis non, quod modi assumenda quam
+    dolores fugiat eos incidunt eum cum consequuntur sequi totam soluta. Obcaecati, quisquam quae, libero officiis iste,
+    quia inventore dolor fuga sint numquam eum debitis neque ratione autem assumenda.
+  </div>
+  <div class="sticky top-0 h-screen bg-green-400">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolore laboriosam sapiente eum in. Quasi neque
+    repellat deleniti totam reprehenderit officia delectus accusamus nulla dolore! Ex ea quae reiciendis adipisci
+    placeat consequatur laborum corrupti. Saepe autem in vel ipsa recusandae accusantium aliquam dolorem.
+  </div>
+  <div class="sticky top-0 h-screen bg-red-400">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quo nulla quis consequuntur fugiat nihil ad
+    sapiente perferendis unde laboriosam a porro impedit odio libero dicta aut voluptas provident totam alias tempore,
+    accusantium hic quam vitae!
+  </div>
+  <div class="sticky top-0 h-screen bg-cyan-400">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci nobis voluptatum expedita, eum magnam in, nulla
+    quasi autem quisquam sunt aliquam? Illum itaque exercitationem minima eaque quod illo eligendi veniam.
+  </div>
+</div>
+
+<div class="bg-black w-screen h-screen space">
+  <div
+    *ngFor="let star of stars"
+    class="rounded-full bg-white absolute"
+    [ngStyle]="{
+      top: star.y + 'px',
+      left: star.x + 'px',
+      width: star.size + 'px',
+      height: star.size + 'px',
+      transform: 'translateZ(' + star.z + 'px)',
+      backdropFilter: 'blur(' + star.blur + 'px)'
+    }"
+  ></div>
+</div>
