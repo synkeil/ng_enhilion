@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePage } from './pages/home/home.page';
 import { StarfieldComponent } from './components/starfield/starfield.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePage,
-    StarfieldComponent
+    StarfieldComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
