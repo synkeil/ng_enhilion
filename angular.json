@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ng_enhilion:build:production"
+              "browserTarget": "ng_enhilion:build:production"
             },
             "development": {
-              "buildTarget": "ng_enhilion:build:development"
+              "browserTarget": "ng_enhilion:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "ng_enhilion:build"
+            "browserTarget": "ng_enhilion:build"
           }
         },
         "test": {
@@ -121,7 +121,7 @@
           "defaultConfiguration": "production"
         },
         "serve-ssr": {
-          "builder": "@angular-devkit/build-angular:ssr-dev-server",
+          "builder": "@nguniversal/builders:ssr-dev-server",
           "configurations": {
             "development": {
               "browserTarget": "ng_enhilion:build:development",
@@ -135,7 +135,7 @@
           "defaultConfiguration": "development"
         },
         "prerender": {
-          "builder": "@angular-devkit/build-angular:prerender",
+          "builder": "@nguniversal/builders:prerender",
           "options": {
             "routes": [
               "/"

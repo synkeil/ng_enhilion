@@ -25,7 +25,7 @@
   <div
     *ngFor="let star of stars"
     class="rounded-full bg-white absolute"
-    [style]="{
+    [ngStyle]="{
       top: star.y + 'px',
       left: star.x + 'px',
       width: star.size + 'px',
