@@ -6,7 +6,7 @@ import { Component, ElementRef, HostListener, Renderer2 } from "@angular/core";
   styleUrls: ["./app.component.scss"],
 })
 export class AppComponent {
-  title = "ng_enhilion";
+  title = "Enhilion, Développeur Web Full Stack";
 
   mouseX: number = 0;
   mouseY: number = 0;
