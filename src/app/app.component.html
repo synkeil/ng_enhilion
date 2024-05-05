@@ -1,7 +1,7 @@
 <main class="relative">
   <div
-    class="animate-bounce border-orange-300 border-2 rounded-full fixed w-8 h-8 z-50 pointer-events-none"
-    [style]="{ left: mouseX - 16 + 'px', top: mouseY - 16 + 'px' }"
+    #cursor
+    class="border-orange-300 bg-orange-300 border-2 rounded-full fixed w-8 h-8 z-50 pointer-events-none transition-all duration-75"
   ></div>
 
   <router-outlet></router-outlet>
